@@ -711,7 +711,7 @@ pub fn to_contiguous(input: &CpuStorage, layout: &Layout) -> Result<CpuStorage> 
     })
 }
 
-/// Convert storage to Vec<f64>, respecting layout (strides, offset).
+/// Convert storage to `Vec<f64>`, respecting layout (strides, offset).
 pub fn to_f64_vec(input: &CpuStorage, layout: &Layout) -> Result<Vec<f64>> {
     Ok(match input {
         CpuStorage::F16(data) => layout
