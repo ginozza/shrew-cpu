@@ -2,7 +2,7 @@
 //!
 //! CPU backend implementation for Shrew.
 //!
-//! This crate implements the [`Backend`](shrew_core::Backend) trait for CPU execution.
+//! This crate implements the [`Backend`] trait for CPU execution.
 //! Uses [`gemm`] for SIMD-accelerated matrix multiplication (AVX2/AVX-512/FMA)
 //! and [`rayon`] for parallel batched matmul and large elementwise ops.
 // reference implementation: everything runs on the CPU using standard Rust
